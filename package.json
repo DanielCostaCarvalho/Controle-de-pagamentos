@@ -1,0 +1,22 @@
+{
+  "name": "controle-de-pagamentos",
+  "version": "0.0.1",
+  "description": "Software para controle de pagamentos recebidos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielCostaCarvalho/Controle-de-pagamentos.git"
+  },
+  "author": "Daniel Costa Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielCostaCarvalho/Controle-de-pagamentos/issues"
+  },
+  "homepage": "https://github.com/DanielCostaCarvalho/Controle-de-pagamentos#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
