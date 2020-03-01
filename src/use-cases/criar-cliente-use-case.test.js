@@ -12,4 +12,9 @@ describe('Criar cliente', () => {
     const cnpj = 'valido'
     expect(criarCliente.criar({ nome, cnpj })).toEqual({ nome, cnpj })
   })
+
+  it('should return an error if no name is provided', () => {
+    const cnpj = 'valido'
+    expect(() => criarCliente.criar({ cnpj })).toThrow(new Error('Nome não inserido'))
+  })
 })
