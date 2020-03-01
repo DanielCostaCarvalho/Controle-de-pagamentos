@@ -17,4 +17,9 @@ describe('Criar cliente', () => {
     const cnpj = 'valido'
     expect(() => criarCliente.criar({ cnpj })).toThrow(new Error('Nome não inserido'))
   })
+
+  it('should return an error if no name is provided', () => {
+    const nome = 'valido'
+    expect(() => criarCliente.criar({ nome })).toThrow(new Error('CNPJ não inserido'))
+  })
 })

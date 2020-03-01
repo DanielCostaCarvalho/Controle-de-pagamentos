@@ -4,6 +4,10 @@ module.exports = class CriarCliente {
       throw new Error('Nome não inserido')
     }
 
+    if (!cnpj) {
+      throw new Error('CNPJ não inserido')
+    }
+
     return { nome, cnpj }
   }
 }
